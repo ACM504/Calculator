@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="calc.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <title></title>
+</head>
+<body>
+<!-- Title of Calculator -->
+<h1>Calculator</h1>
+
+<!-- Calculator -->
+<div id="square" class="square_contents">
+    <div class="row">
+        <input type="text" placeholder="0" maxlength="25" id="calculator"></input>
+    </div>
+    <!-- First Row of Calculator -->
+    <div class="row">
+        <div class="col-xs-3">
+            <button id="clear" class="btn-block clear">C</button>
+        </div>
+        <div class="col-xs-3">
+            <button value="X^2" id="squared" class="btn-block operation">X^2</button>
+        </div>
+        <div class="col-xs-3">
+            <button value="/" class="btn-block operation">/</button>
+        </div>
+        <div class="col-xs-3">
+            <button value="*" class="btn-block operation">*</button>
+        </div>
+    </div>
+    <!-- Second Row of Calculator -->
+    <div class="row">
+        <div class="col-xs-3">
+            <button value="7" class="btn-block number">7</button>
+        </div>
+        <div class="col-xs-3">
+            <button value="8" class="btn-block number">8</button>
+        </div>
+        <div class="col-xs-3">
+            <button value="9" class="btn-block number">9</button>
+        </div>
+        <div class="col-xs-3">
+            <button value="-" class="btn-block operation">--</button>
+        </div>
+    </div>
+    <!-- Third Row of Calculator -->
+    <div class="row">
+        <div class="col-xs-3">
+            <button value="4" class="btn-block number">4</button>
+        </div>
+        <div class="col-xs-3">
+            <button value="5" class="btn-block number">5</button>
+        </div>
+        <div class="col-xs-3">
+            <button value="6" class="btn-block number">6</button>
+        </div>
+        <div class="col-xs-3">
+            <button value="+" class="btn-block operation">+</button>
+        </div>
+    </div>
+    <!-- Fourth & Fifth Row of Calculator -->
+    <div class="row">
+        <row>
+            <div class="col-xs-9">
+                <row>
+                    <div class="col-xs-4">
+                        <button value="1" class="btn-block number">1</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button value="2" class="btn-block number">2</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button value="3" class="btn-block number">3</button>
+                    </div>
+                </row>
+                <row>
+                    <div class="col-xs-8">
+                        <button value="0" class="btn-block number">0</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button id="decimal" value="." class="btn-block number">.</button>
+                    </div>
+                </row>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="equals" class="btn-block">=</button>
+            </div>
+        </row>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="calc.js"></script>
+</html>
